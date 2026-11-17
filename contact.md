@@ -19,7 +19,7 @@ nav_order: 6
     <p>Explore my repositories and follow my learning journey on GitHub.</p>
     <a class="button button--primary" href="https://github.com/sarmahdi" target="_blank" rel="noopener noreferrer">Visit my GitHub profile ↗</a>
     <hr>
-    <h3>Add your contact details</h3>
-    <p class="muted">To make this page a complete professional contact page, edit this file and add your preferred professional email address and LinkedIn profile URL. These details have intentionally been left out rather than guessing them.</p>
+    <h3>My Linkedin </h3>
+    <p class="muted">You can connect with me on Linkedin https://www.linkedin.com/in/syedmahdi/ </p>
   </div>
 </section>
