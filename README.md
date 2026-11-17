@@ -1,15 +1,40 @@
-# sarmahdi.github.io
+# sarmahdi.github.io — Personal Portfolio
 
-www.linkedin.com/in/syedmahdi
+A Jekyll-based personal portfolio for GitHub Pages.
 
+## Pages
 
-https://www.datacamp.com/completed/statement-of-accomplishment/course/9d732c445f8d690c19e5e9839c316d11d7c9ee70?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa
+- `/` — Home
+- `/about/` — About
+- `/skills/` — Skills and learning areas
+- `/projects/` — Projects
+- `/datacamp/` — DataCamp tracks, courses and projects
+- `/contact/` — Contact
 
-https://www.datacamp.com/completed/statement-of-accomplishment/course/9e94ffec4ca26dd2ee748ad200889ebf462526f3?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa
+## Publish with GitHub Pages
 
-https://www.datacamp.com/completed/statement-of-accomplishment/course/9e64aa7a276090e5038d974ec9737e80cf7e7eef?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa
+1. Upload the contents of this repository folder to the root of `sarmahdi/sarmahdi.github.io`.
+2. In GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select the `main` branch and `/ (root)` folder, then save.
+5. Wait for the GitHub Pages deployment to finish.
 
-Datacamp Tracks 
+The site is configured for `https://sarmahdi.github.io` and uses GitHub Pages-compatible Jekyll plugins.
 
-https://www.datacamp.com/completed/statement-of-accomplishment/track/766f3289d7a05a392fbfa37ecaf651b259efe318?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa
-https://www.datacamp.com/completed/statement-of-accomplishment/track/c812f8e3614362eadfde996a042a74712fd64781?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa
+## Personalise before publishing
+
+- Update the About page with your professional background, education and goals.
+- Add your email and LinkedIn URL to `contact.md`.
+- Update the Skills page as your experience grows. Current labels reflect learning areas represented by the listed courses and projects, not verified professional proficiency.
+- Add new projects and credentials as you complete them.
+
+## Local preview (optional)
+
+With Ruby and Bundler installed:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Then visit `http://localhost:4000`.

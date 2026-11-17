@@ -1,0 +1,21 @@
+title: "Syed Mahdi | Portfolio"
+description: "A professional portfolio showcasing learning, projects and developing capabilities in data, cloud technology and artificial intelligence."
+url: "https://sarmahdi.github.io"
+baseurl: ""
+lang: en
+timezone: Australia/Brisbane
+
+markdown: kramdown
+permalink: pretty
+
+# GitHub Pages uses the supported Jekyll environment.
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
