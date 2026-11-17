@@ -40,6 +40,6 @@ nav_order: 3
       <div class="tag-list"><span>Data visualisation</span><span>Exploratory analysis</span></div>
     </article>
   </div>
-  <p class="small-note">These are learning areas represented by the courses and projects listed in this portfolio, not a claim of professional proficiency. Add tools and proficiency levels as you gain experience.</p>
+  <p class="small-note">These are learning areas represented by the courses and projects listed in this portfolio, not a claim of professional proficiency. I will add tools and proficiency levels as I go along.</p>
   <div class="center-action"><a class="button button--primary" href="{{ '/datacamp/' | relative_url }}">See supporting achievements →</a></div>
 </section>
