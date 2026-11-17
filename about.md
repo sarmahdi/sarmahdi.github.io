@@ -16,7 +16,7 @@ nav_order: 2
 <section class="section container narrow-content">
   <p class="eyebrow">MY APPROACH</p>
   <h2>Curiosity, consistency and practical learning</h2>
-  <p>I'm Syed Mahdi. I use structured learning and hands-on projects to build my understanding of modern technology. My recent learning has covered Python data manipulation, AWS cloud technology, artificial intelligence, AI agents and large language models.</p>
+  <p>I'm Syed Mahdi. I am a Software Engineer mainly developing Java and Spring based web application as well as desktop applications with microservices. I use structured learning and hands-on projects to build my understanding of modern technology. My recent learning has covered Python data manipulation, AWS cloud technology, artificial intelligence, AI agents and large language models.</p>
   <p>I believe that learning becomes more meaningful when concepts are explored through practical work. This portfolio brings together selected learning achievements and projects as a record of that ongoing development.</p>
   <div class="callout">
     <strong>Current learning themes</strong>
@@ -27,5 +27,5 @@ nav_order: 2
       <li>AWS cloud technology and services concepts</li>
     </ul>
   </div>
-  <p class="muted">This page is an introductory profile. Add your professional background, education, location or career goals here when you're ready.</p>
+  <p class="muted">This is just a snapshot of what I am learning these days.  </p>
 </section>
