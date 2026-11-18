@@ -58,7 +58,7 @@ nav_order: 4
 </li>
 </ul>
 <div class="prj-cta">
-<a class="prj-btn" href="{{ '/datacamp/' | relative_url }}">View all learning achievements</a>
+<a class="prj-btn" href="{{ '/datacamp-activities/' | relative_url }}">View all learning achievements</a>
 </div>
 </div>
 </div>
