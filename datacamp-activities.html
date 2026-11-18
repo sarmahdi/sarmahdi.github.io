@@ -1,0 +1,248 @@
+---
+layout: default
+title: DataCamp Achievements
+description: Completed DataCamp learning tracks, courses and projects.
+permalink: /datacamp-activities/
+nav_order: 5
+---
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap");
+
+.dc {
+  --dc-bg: #f4f7f6;
+  --dc-surface: #ffffff;
+  --dc-ink: #0c2233;
+  --dc-muted: #51667a;
+  --dc-line: #d5dfe0;
+  --dc-accent: #067a46;
+  --dc-accent-soft: #dff5e9;
+  --dc-mark: #03ef62;
+  --dc-focus: #0b57d0;
+  background: var(--dc-bg);
+  color: var(--dc-ink);
+  font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+@media (prefers-color-scheme: dark) {
+  .dc {
+    --dc-bg: #08141e;
+    --dc-surface: #0e1f2d;
+    --dc-ink: #e8f0f2;
+    --dc-muted: #9bb0bf;
+    --dc-line: #223748;
+    --dc-accent: #4ee08c;
+    --dc-accent-soft: #11382a;
+    --dc-focus: #8ab4ff;
+  }
+}
+.dc *, .dc *::before, .dc *::after { box-sizing: inherit; }
+.dc-wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* Hero */
+.dc-hero { padding: 5rem 0 3.5rem; border-bottom: 1px solid var(--dc-line); }
+.dc-hero h1 {
+  font-family: "Bricolage Grotesque", "Figtree", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  margin: 0 0 1.25rem;
+  max-width: 14ch;
+}
+.dc-hero p { max-width: 58ch; color: var(--dc-muted); margin: 0 0 2.25rem; }
+.dc-tally {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 560px;
+  border: 1px solid var(--dc-line);
+  border-radius: 10px;
+  background: var(--dc-surface);
+  overflow: hidden;
+}
+.dc-tally a {
+  display: block;
+  padding: 1rem 1.25rem;
+  color: inherit;
+  text-decoration: none;
+  border-right: 1px solid var(--dc-line);
+}
+.dc-tally a:last-child { border-right: 0; }
+.dc-tally a:hover { background: var(--dc-accent-soft); }
+.dc-tally strong {
+  display: block;
+  font-family: "Bricolage Grotesque", "Figtree", sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.dc-tally span { font-size: 0.9rem; color: var(--dc-muted); }
+.dc-status { margin-top: 1rem; font-size: 0.9rem; color: var(--dc-muted); display: flex; align-items: center; gap: 0.5rem; }
+.dc-status::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--dc-mark); box-shadow: 0 0 0 3px var(--dc-accent-soft); }
+
+/* Sections */
+.dc-section {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 3rem;
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--dc-line);
+  scroll-margin-top: 1rem;
+}
+.dc-side h2 {
+  font-family: "Bricolage Grotesque", "Figtree", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+}
+.dc-side p { margin: 0; color: var(--dc-muted); font-size: 0.98rem; }
+.dc-side { position: sticky; top: 1.5rem; align-self: start; }
+
+/* Credential rows */
+.dc-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.dc-item {
+  background: var(--dc-surface);
+  border: 1px solid var(--dc-line);
+  border-left: 4px solid var(--dc-mark);
+  border-radius: 6px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.dc-item h3 {
+  font-family: "Bricolage Grotesque", "Figtree", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+.dc-field { font-size: 0.9rem; font-weight: 600; color: var(--dc-accent); margin: 0; }
+.dc-item p.dc-desc { margin: 0; color: var(--dc-muted); max-width: 60ch; }
+.dc-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 0; padding: 0; list-style: none; }
+.dc-tags li { font-size: 0.85rem; padding: 0.15rem 0.65rem; border-radius: 999px; background: var(--dc-accent-soft); color: var(--dc-ink); }
+.dc-link {
+  justify-self: start;
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--dc-ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--dc-mark);
+  padding-bottom: 1px;
+}
+.dc-link:hover { background: var(--dc-accent-soft); }
+.dc a:focus-visible { outline: 3px solid var(--dc-focus); outline-offset: 3px; border-radius: 3px; }
+
+.dc-note { padding: 2rem 0 4rem; color: var(--dc-muted); font-size: 0.95rem; max-width: 70ch; }
+.dc-note strong { color: var(--dc-ink); }
+.dc-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+@media (max-width: 800px) {
+  .dc-hero { padding: 3rem 0 2.5rem; }
+  .dc-section { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.5rem 0; }
+  .dc-side { position: static; }
+  .dc-tally a { padding: 0.85rem 0.9rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .dc-tally a, .dc-link { transition: background-color 0.15s ease; }
+}
+</style>
+
+<div class="dc">
+  <header class="dc-hero">
+    <div class="dc-wrap">
+      <h1>DataCamp Activities</h1>
+      <p>Completed learning tracks, courses and projects across artificial intelligence, data science and cloud technology. Each item links to its credential on DataCamp.</p>
+      <nav class="dc-tally" aria-label="Jump to a section">
+        <a href="#tracks"><strong>2</strong><span>Tracks</span></a>
+        <a href="#courses"><strong>3</strong><span>Courses</span></a>
+        <a href="#projects"><strong>2</strong><span>Projects</span></a>
+      </nav>
+      <p class="dc-status"> Completed</p>
+    </div>
+  </header>
+
+  <div class="dc-wrap">
+
+    <section class="dc-section" id="tracks" aria-labelledby="tracks-title">
+      <div class="dc-side">
+        <h2 id="tracks-title">Learning tracks</h2>
+        <p>Structured pathways that build the foundations.</p>
+      </div>
+      <ul class="dc-list">
+        <li class="dc-item">
+          <p class="dc-field">Artificial intelligence</p>
+          <h3>AI Fundamentals</h3>
+          <p class="dc-desc">Foundational learning in artificial intelligence and its concepts and applications.</p>
+          <ul class="dc-tags"><li>AI</li><li>AI fundamentals</li></ul>
+          <a class="dc-link" href="https://www.datacamp.com/completed/statement-of-accomplishment/track/766f3289d7a05a392fbfa37ecaf651b259efe318" target="_blank" rel="noopener noreferrer">View statement of accomplishment<span class="dc-sr"> (opens in a new tab)</span></a>
+        </li>
+        <li class="dc-item">
+          <p class="dc-field">Artificial intelligence</p>
+          <h3>AI Agent Fundamentals</h3>
+          <p class="dc-desc">Foundational learning about AI agents and intelligent agent-based systems.</p>
+          <ul class="dc-tags"><li>AI agents</li><li>Artificial intelligence</li></ul>
+          <a class="dc-link" href="https://www.datacamp.com/completed/statement-of-accomplishment/track/c812f8e3614362eadfde996a042a74712fd64781" target="_blank" rel="noopener noreferrer">View statement of accomplishment<span class="dc-sr"> (opens in a new tab)</span></a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="dc-section" id="courses" aria-labelledby="courses-title">
+      <div class="dc-side">
+        <h2 id="courses-title">Courses</h2>
+        <p>Focused training across key technology domains.</p>
+      </div>
+      <ul class="dc-list">
+        <li class="dc-item">
+          <p class="dc-field">Cloud computing</p>
+          <h3>AWS Cloud Technology and Services Concepts</h3>
+          <p class="dc-desc">Exploring AWS cloud technology, services and foundational cloud computing concepts.</p>
+          <ul class="dc-tags"><li>AWS</li><li>Cloud technology</li></ul>
+          <a class="dc-link" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/9d732c445f8d690c19e5e9839c316d11d7c9ee70" target="_blank" rel="noopener noreferrer">View certificate<span class="dc-sr"> (opens in a new tab)</span></a>
+        </li>
+        <li class="dc-item">
+          <p class="dc-field">Data science</p>
+          <h3>Data Manipulation with pandas</h3>
+          <p class="dc-desc">Working with structured datasets using Python’s pandas library.</p>
+          <ul class="dc-tags"><li>Python</li><li>pandas</li><li>Data manipulation</li></ul>
+          <a class="dc-link" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/9e94ffec4ca26dd2ee748ad200889ebf462526f3" target="_blank" rel="noopener noreferrer">View certificate<span class="dc-sr"> (opens in a new tab)</span></a>
+        </li>
+        <li class="dc-item">
+          <p class="dc-field">Generative AI</p>
+          <h3>Large Language Models (LLMs) Concepts</h3>
+          <p class="dc-desc">Exploring large language models and concepts behind modern generative AI systems.</p>
+          <ul class="dc-tags"><li>LLMs</li><li>Generative AI</li></ul>
+          <a class="dc-link" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/9e64aa7a276090e5038d974ec9737e80cf7e7eef" target="_blank" rel="noopener noreferrer">View certificate<span class="dc-sr"> (opens in a new tab)</span></a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="dc-section" id="projects" aria-labelledby="projects-title">
+      <div class="dc-side">
+        <h2 id="projects-title">Projects</h2>
+        <p>Applying the skills to practical data challenges.</p>
+      </div>
+      <ul class="dc-list">
+        <li class="dc-item">
+          <p class="dc-field">Exploratory data analysis</p>
+          <h3>Getting a Good Night’s Sleep</h3>
+          <p class="dc-desc">Dive into sleep data and gain insights about factors that impact sleep quality.</p>
+          <ul class="dc-tags"><li>Data manipulation</li><li>Exploratory data analysis</li></ul>
+          <a class="dc-link" href="https://www.datacamp.com/completed/statement-of-accomplishment/project/40dda5fe-e07e-45e4-9386-aa5d6bb707bb" target="_blank" rel="noopener noreferrer">View project statement<span class="dc-sr"> (opens in a new tab)</span></a>
+        </li>
+        <li class="dc-item">
+          <p class="dc-field">Data visualisation</p>
+          <h3>Investigating Netflix Movies</h3>
+          <p class="dc-desc">Apply foundational Python skills to manipulate and visualize movie data.</p>
+          <ul class="dc-tags"><li>Data manipulation</li><li>Data visualisation</li></ul>
+          <a class="dc-link" href="https://www.datacamp.com/completed/statement-of-accomplishment/project/976f8ade-4846-43c3-ae6c-ab15c173d276" target="_blank" rel="noopener noreferrer">View project statement<span class="dc-sr"> (opens in a new tab)</span></a>
+        </li>
+      </ul>
+    </section>
+
+    <p class="dc-note"><strong>Note:</strong> Every link opens the matching DataCamp credential in a new tab. The credentials are hosted by DataCamp.</p>
+  </div>
+</div>
