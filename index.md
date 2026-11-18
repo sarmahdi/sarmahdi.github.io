@@ -63,7 +63,7 @@ nav_order: 1
 <div class="home-wrap">
 <div>
 <h1>Turning curiosity into practical capability.</h1>
-<p>Hello, I’m <strong>Syed A Mahdi</strong>, a Java software engineer with experience across the fintech and autonomous mining industries. I develop web and desktop applications using microservices architecture, with both event-driven and request-response communication, and RESTful APIs.</p>
+<p>Hello, I’m <strong>Syed A Mahdi</strong>, a Software engineer with experience across the fintech and autonomous mining industries. I develop web and desktop java applications using microservices architecture, with both event-driven and request-response communication, and RESTful APIs.</p>
 <p>Alongside that work, I’m building my knowledge of data, cloud technology and artificial intelligence through structured learning and hands-on projects.</p>
 <div class="home-actions">
 <a class="home-btn home-btn--primary" href="{{ '/projects/' | relative_url }}">Explore my projects</a>
@@ -71,9 +71,9 @@ nav_order: 1
 </div>
 </div>
 <dl class="home-facts">
-<div><dt>Role</dt><dd>Java software engineer</dd></div>
-<div><dt>Industries</dt><dd>Fintech and autonomous mining</dd></div>
-<div><dt>Builds</dt><dd>Web and desktop applications</dd></div>
+<div><dt>Role</dt><dd>Software engineer</dd></div>
+<div><dt>Industries</dt><dd>Fintech, autonomous mining and Government</dd></div>
+<div><dt>Developed</dt><dd>Web and desktop applications</dd></div>
 <div><dt>Architecture</dt><dd>Microservices, event-driven and request-response, RESTful APIs</dd></div>
 </dl>
 </div>
@@ -91,11 +91,11 @@ nav_order: 1
 </li>
 <li>
 <div><h3>Artificial intelligence</h3><p>Building foundational knowledge of AI, AI agents and large language model concepts.</p></div>
-<a class="home-link" href="{{ '/datacamp/' | relative_url }}">View courses</a>
+<a class="home-link" href="{{ '/datacamp-activities/' | relative_url }}">View courses</a>
 </li>
 <li>
 <div><h3>Cloud technology</h3><p>Learning core cloud concepts and the services available through AWS.</p></div>
-<a class="home-link" href="{{ '/datacamp/' | relative_url }}">View certificate</a>
+<a class="home-link" href="{{ '/datacamp-activities/' | relative_url }}">View certificate</a>
 </li>
 </ul>
 </section>
@@ -108,9 +108,9 @@ nav_order: 1
 </div>
 <div>
 <div class="home-tally">
-<a href="{{ '/datacamp/' | relative_url }}#tracks"><strong>2</strong><span>Tracks</span></a>
-<a href="{{ '/datacamp/' | relative_url }}#courses"><strong>3</strong><span>Courses</span></a>
-<a href="{{ '/datacamp/' | relative_url }}#projects"><strong>2</strong><span>Projects</span></a>
+<a href="{{ '/datacamp-activities/' | relative_url }}#tracks"><strong>2</strong><span>Tracks</span></a>
+<a href="{{ '/datacamp-activities/' | relative_url }}#courses"><strong>3</strong><span>Courses</span></a>
+<a href="{{ '/datacamp-activities/' | relative_url }}#projects"><strong>2</strong><span>Projects</span></a>
 </div>
 <a class="home-all" href="{{ '/datacamp-activities/' | relative_url }}">Browse all achievements</a>
 </div>

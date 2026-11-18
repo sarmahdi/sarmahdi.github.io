@@ -71,7 +71,7 @@ nav_order: 3
 </ul>
 <p class="skl-note"><strong>These are learning areas, not a claim of professional proficiency.</strong> They reflect the courses and projects listed in this portfolio. I’ll add tools and proficiency levels as I go.</p>
 <div class="skl-cta">
-<a class="skl-btn" href="{{ '/datacamp/' | relative_url }}">See supporting achievements</a>
+<a class="skl-btn" href="{{ '/datacamp-activities/' | relative_url }}">See supporting achievements</a>
 </div>
 </div>
 </div>
